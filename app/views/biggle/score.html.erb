@@ -8,12 +8,13 @@
                 </%>
                 <% end %>
                 </ul>
-              <h3>Votre réponse</h3>
+              <h3>Your answer</h3>
               <%= @append %>
-                <h3>Votre Score</h3>
+                <h3>Your Score</h3>
               <h1><%= @result[:score] %></h1>
-              en <br>
+              in <br>
               <h3><%= @result[:time] %> secondes</h3>
+              <%= link_to 'Play Again', home_path, class: 'btn btn-warning' %>
             </div>
         </div>
     </div>
