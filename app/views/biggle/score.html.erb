@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3 text-center">
+            <div class="card">
+                <ul class="list-inline">
+                <% @the_grid.each do |char| %>
+                    <li><%= char %></li>
+                </%>
+                <% end %>
+                </ul>
+              <h3>Votre réponse</h3>
+              <%= @append %>
+                <h3>Votre Score</h3>
+              <h1><%= @result[:score] %></h1>
+              en <br>
+              <h3><%= @result[:time] %> secondes</h3>
+            </div>
+        </div>
+    </div>
+</div>
